@@ -1,38 +1,76 @@
-.App {
+.app {
+  display: flex;
+}
+
+/* LeftSide component styles */
+.left-side {
+  flex: 1;
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employee-listings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.employee-section {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.employee-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.employee-section h3 {
+  margin-bottom: -15px;
+}
+
+.search-bar {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* RightSide component styles */
+.right-side {
+  flex: 1;
+  padding: 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.employee-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  /* margin-top: 10px; */
+}
+
+.employee-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.employee-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
